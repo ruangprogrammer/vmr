@@ -1,0 +1,66 @@
+
+
+
+1. member
+2. downlod  
+3. product
+4. artikel
+5. slider
+6. siswa
+7. foto balap conect instagram
+8. admin 
+9. cetak serfikat
+
+
+1. slider
+2. galeri foto    ... ganti foto dari instagram
+3. sepesial tool  ... sama ama artikel
+4. paket kursus   ... sama ama artikel
+5. foto siswa     ... data siswa
+6. member		  ... tempat member
+7. artikel        ... artkel
+8. contact        ... contack                              OK
+9. download       ...                   
+10. sertifikat    ...
+11. product 	  ...                   				   OK
+
+
+
+
+HALAMAN PIBLIC
+
+
+
+service.html   ...                                          
+
+service-detail-3.html ..
+
+for - login oke
+
+sistem pemesanan product kirim ke email customer..              urung
+
+halaman member .. bisa update foto profil dan dll               urung
+
+halaman download  public                                        urung
+
+halaman download admin                                          done
+
+login dengan facebook
+
+CETAK SERTIFIKAT PDF     
+
+testimoni di halaman home :    				 
+
+testimonial di halaman admin done
+
+halaman member_area public..
+
+login dengan facebook
+
+login dengan gmail
+
+widget instagram
+
+halaman member di bagian admin.
+
+pemesanan product..

@@ -1,0 +1,28 @@
+RewriteEngine on
+
+RewriteRule ^index.html$ ?hal=home [L]
+RewriteRule ^special-tools.html$ ?hal=special-tools [L]
+RewriteRule ^galeri-foto.html$ ?hal=galeri-foto [L]
+
+RewriteRule ^product.html$ ?hal=product [L]
+RewriteRule ^pesan-product-(.*)\.html$ ?hal=pesan-product&id=$1 [L]
+RewriteRule ^proses-order.html$ ?hal=proses-order [L]
+
+RewriteRule ^biaya.html$ ?hal=biaya&id=$1 [L]
+RewriteRule ^siswa.html$ ?hal=siswa&id=$1 [L]
+RewriteRule ^download.html$ ?hal=download [L]
+
+RewriteRule ^artikel.html$ ?hal=artikel [L]
+RewriteRule ^artikel-detail-(.*)\.html$ ?hal=artikel-detail&id=$1 [L]
+
+RewriteRule ^service-detail-(.*)\.html$ ?hal=service-detail&id=$1 [L]
+
+RewriteRule ^contact.html$ ?hal=contact [L]
+
+
+RewriteRule ^login.html$ ?hal=login [L]
+RewriteRule ^member_area.html$ ?hal=member_area [L]
+
+
+#RewriteRule ^page-([0-9]+)-(.*)\.html$ media.php?mod=page&id=$1 [L]
+#RewriteRule ^download-(.*)-([0-9]+)\.html$ download.php?code=$1&id=$2 [L]
