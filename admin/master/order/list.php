@@ -44,22 +44,25 @@ error_reporting(0);
                 <?php 
                       $no = 1;
                       $queryTransaksi = mysql_query("SELECT *
-                                                     FROM
-                                                        `orders`
-                                                       ORDER BY id_orders  DESC");
-                      $total=0;
+FROM
+    `vmr`.`product`
+    INNER JOIN `vmr`.`order_pelanggan` 
+        ON (`product`.`product_id` = `order_pelanggan`.`product_id`)
+                                                                                                           ORDER BY order_id  DESC");
+   //                  $total=0;
                       while ($rowTransaksi  = mysql_fetch_array($queryTransaksi)) {
-                        $sub_total=+$rowTransaksi['product_price'] * $rowTransaksi['jumlah'];
+                        /*
+                        $sub_total=+$rowTransaksi['product_price'] * $rowTransaksi['jumlah'];*/
                         //$total+=$sub_total;
                    ?>
                 <tr class="">
                     <td><?php echo $no++; ?></td>
-                    <td><?php echo $rowTransaksi['id_orders']?></td>
-                    <td><?php echo $rowTransaksi['tgl_order']?>/<?php echo $rowTransaksi['tgl_order']?></td>
-                    <td><?php echo $rowTransaksi['nama_petugas']?></td>
+                    <td><?php echo $rowTransaksi['order_id']?></td>
+                    <td><?php echo $rowTransaksi['order_date']?></td>
+                    <td><?php echo $rowTransaksi['product_name']?></td>
                     <td>
                         <?php 
-                            $queryQTY = mysql_query("SELECT SUM(orders_detail.jumlah) AS jumlahqty , product.product_id
+              /*              $queryQTY = mysql_query("SELECT SUM(orders_detail.jumlah) AS jumlahqty , product.product_id
                         FROM
                             `orders`
                             INNER JOIN `orders_detail` 
@@ -68,12 +71,12 @@ error_reporting(0);
                                 ON (`product`.`product_id` = `orders_detail`.`product_id`) WHERE orders.id_orders='".$rowTransaksi['id_orders']."' ");
                             $QTY = mysql_fetch_array($queryQTY);
 
-                            echo $QTY['jumlahqty'];
+                            echo $QTY['jumlahqty'];*/
                          ?>
                     </td>
                     <td style="text-align: right;">
                         <?php
-                        $queryTotal=mysql_query("SELECT *
+                       /* $queryTotal=mysql_query("SELECT *
                         FROM
                             `orders`
                             INNER JOIN `orders_detail` 
@@ -87,12 +90,12 @@ error_reporting(0);
                             $totalQuery +=$subTotal; 
                         }
                         echo "Rp. ".number_format($totalQuery,0,',','.');
-                        $total+=$totalQuery;
+                        $total+=$totalQuery;*/
                         ?>
                     </td>
                     <td>
-                        <a href="?hal=master/order/detail&id=<?php echo $rowTransaksi['id_orders']; ?>">
-                            <button class="btn btn-primary" type="submit"><i class="fa fa-eye"></i> Lihat</button>
+                        <a href="?hal=master/order/detail&id=<?php echo $rowTransaksi['order_id']; ?>">
+                            <button class="btn btn-primary" type="submit"><i class="fa fa-eye"></i> Detail</button>
                         </a>
                 
                     </td>
