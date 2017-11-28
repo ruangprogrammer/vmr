@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 26, 2017 at 06:20 AM
+-- Generation Time: Nov 28, 2017 at 01:16 AM
 -- Server version: 10.1.25-MariaDB
 -- PHP Version: 5.6.31
 
@@ -264,8 +264,19 @@ CREATE TABLE `order_pelanggan` (
   `order_bbm` varchar(100) DEFAULT NULL,
   `order_wa` varchar(100) DEFAULT NULL,
   `order_alamat` varchar(100) DEFAULT NULL,
+  `order_date` datetime DEFAULT NULL,
   `product_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `order_pelanggan`
+--
+
+INSERT INTO `order_pelanggan` (`order_id`, `order_name`, `order_email`, `order_bbm`, `order_wa`, `order_alamat`, `order_date`, `product_id`) VALUES
+(33, 'ddddddddd', 'dddddddddddddddddddd', 'dddddddddddddddddddd', 'dddddddddddddd', 'ddddddddddddd', NULL, 48),
+(34, '2222222222222', '22222222222222', '2222222', '2222222222222222222', '222222222', NULL, 51),
+(35, '2222222222222222222', '22222222222222222222', '222222', '2222222222222', '22222222222222222222', NULL, 50),
+(36, '', '', '', '', '', NULL, 47);
 
 -- --------------------------------------------------------
 
@@ -335,8 +346,12 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`product_id`, `product_name`, `product_price`, `product_desc`, `product_images`, `product_stock`, `product_date`, `category_id`) VALUES
-(47, 'ssssssssssss', 2147483647, '22222222222', 'vmrmekanikberdasi-product-3689385994ambar-black-600x600.jpg', 2147483647, '2017-11-26 11:48:38', 30),
-(48, '222222222222', 2147483647, '22222222222', 'vmrmekanikberdasi-product-4792452885emily-grey.jpg', 2147483647, '2017-11-26 11:48:50', 25);
+(47, 'ssssssssssss', 2147483647, '22222222222', 'vmrmekanikberdasi-product-1857581866_452459_1422616630.jpg', 2147483647, '2017-11-26 11:48:38', 30),
+(48, '222222222222', 2147483647, '22222222222', 'vmrmekanikberdasi-product-2565116806IMG-20150211-00169.jpg', 2147483647, '2017-11-26 11:48:50', 25),
+(49, 'dddddddddddddddd', 0, 'ddddddddddddddd', 'vmrmekanikberdasi-product-3830364856Daftar-Harga-Karburator-Yamaha-RX-King-Orisinil-Terbaru-2017.jpg', 0, '2017-11-26 14:26:51', 30),
+(50, 'sssssssssssssss', 0, 'ssssssssssss', 'vmrmekanikberdasi-product-4045648979HARLEY-DAVIDSONSPORTSTER883XL883C.jpg', 0, '2017-11-26 14:32:12', 25),
+(51, 'ddddddddd', 0, 'dddddddddddddddd', 'vmrmekanikberdasi-product-4703293650IMG-20150211-00169.jpg', 0, '2017-11-26 14:33:03', 25),
+(52, 'dddddddddddddddddddddddddddddddddd', 0, 'sssssssssssssssssss', 'vmrmekanikberdasi-product-1668754465mesinfu.jpg', 0, '2017-11-26 14:34:27', 30);
 
 -- --------------------------------------------------------
 
@@ -360,7 +375,7 @@ INSERT INTO `service` (`service_id`, `service_name`, `service_images`, `service_
 (2, 'berhubungan dengan modifikas', 'vmrmekanikberdasi-servicer-1230478524info-img3-3.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta sed tortor vel mattis.', '2017-11-19 17:31:07'),
 (3, 'Waktu Belajar Fleksibel', 'vmrmekanikberdasi-servicer-1458358518info-img3-3.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta sed tortor vel mattis.', '2017-11-19 19:49:21'),
 (4, 'Materi Mudah di Pahami', 'vmrmekanikberdasi-servicer-9139107386info-img3-3.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta sed tortor vel mattis.', '2017-11-19 19:49:58'),
-(5, 'Instruktur Berpengalaman', 'vmrmekanikberdasi-servicer-2903334015foto.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta sed tortor vel mattis.', '2017-11-19 19:50:16');
+(5, 'Instruktur Berpengalaman', 'vmrmekanikberdasi-servicer-8725505918ambar-black-600x600.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta sed tortor vel mattis.', '2017-11-19 19:50:16');
 
 -- --------------------------------------------------------
 
@@ -383,12 +398,9 @@ CREATE TABLE `siswa` (
 --
 
 INSERT INTO `siswa` (`siswa_id`, `siswa_code`, `siswa_images`, `siswa_name`, `siswa_address`, `siswa_city`, `siswa_status`) VALUES
-(4, '912791', 'info-img3.jpg', 'Valinteno Rosi', 'jalan jogja', 'Yogyakarta', 'lulus'),
-(5, '', 'vmrmekanikberdasi-siswa-2029022568foto.jpg', '', '', '', 'lulus'),
-(6, '2323', 'vmrmekanikberdasi-siswa-2294913231sks.png', 'Iwan Hartadi', 'Sleman', 'Slemania', 'belum_lulus'),
-(7, 'ddddd', 'vmrmekanikberdasi-siswa-1481520501Screenshot_1.jpg', 'ddddddddddddddddddddd', 'dddddddddddddd', 'dddddd', 'lulus'),
-(8, 'sssss', 'vmrmekanikberdasi-siswa-3413347078info-img3-3.jpg', 'sssssssssss', 'ssssss', 'sssssssss', 'belum_lulus'),
-(9, 'aaaaaaaaaaaaaaaaaaaaaaaa', 'vmrmekanikberdasi-siswa-2466480258vmv.png', 'aaaaa', 'aaaaaaaaaaaa', 'aaaaaaaaaaaaaa', 'lulus');
+(5, '1344', 'vmrmekanikberdasi-siswa-2029022568foto.jpg', 'Dina Putri Utami', 'Bantul City', 'Yogyakarta', 'lulus'),
+(6, '2323', 'vmrmekanikberdasi-siswa-1534504715v.jpg', 'Arum Kartika Devi', 'Sleman', 'Sleman', 'lulus'),
+(7, '123', 'vmrmekanikberdasi-siswa-1481520501Screenshot_1.jpg', 'Puji Waloyo', 'Jln Tamrin Raya jakarta Selatan', 'Jakarta', 'belum_lulus');
 
 -- --------------------------------------------------------
 
@@ -696,7 +708,7 @@ ALTER TABLE `orders_temp`
 -- AUTO_INCREMENT for table `order_pelanggan`
 --
 ALTER TABLE `order_pelanggan`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 --
 -- AUTO_INCREMENT for table `paket_kursus`
 --
@@ -711,7 +723,7 @@ ALTER TABLE `portfolio`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `product_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `product_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 --
 -- AUTO_INCREMENT for table `service`
 --
