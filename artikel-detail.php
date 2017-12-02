@@ -12,7 +12,7 @@ $dataArtikel = mysql_fetch_array($sqlArtikel);
                 <ol class="breadcrumb" data-aos="zoom-in">
                     <li><a href="index.html">Home</a>
                     </li>
-                    <li class="active">Artikel</li>
+                    <li class="active">Detail Artikel</li>
                 </ol>
             </div>
         </div>

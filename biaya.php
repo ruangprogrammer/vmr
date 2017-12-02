@@ -6,7 +6,7 @@
             <div class="col-lg-12">
                 <ol class="breadcrumb" data-aos="zoom-in">
                     <li><a href="index.html">Home</a></li>
-                    <li class="active">Drivers</li>
+                    <li class="active">Course</li>
                 </ol>
             </div>
         </div>

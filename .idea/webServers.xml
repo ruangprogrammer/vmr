@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2f9376e8-a305-44cd-ac88-382f1c75d7f7" name="vmr" url="http://vmr.ruangprogrammer.com">
+        <fileTransfer host="vmr.ruangprogrammer.com" port="21" rootFolder="/vmr.ruangprogrammer.com">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

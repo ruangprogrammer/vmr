@@ -63,40 +63,40 @@ $dataProduct = mysql_fetch_array($sqlProduct);
                         <p class="help-block"></p>
                     </div>
                 </div>
-                <div class=" form-group" >
+  <!--              <div class=" form-group" >
                     <div class="controls">
                         <label>Deskripsi:</label>
                         <textarea class="form-control" id="message"  maxlength="999" style="resize:none" disabled="">
-                            <?php echo $dataProduct['product_desc']; ?>
+                            <?php /*echo $dataProduct['product_desc']; */?>
                         </textarea>
                         <p class="help-block"></p>
                     </div>
-                </div>
+                </div>-->
                 <div class=" form-group" >
                     <div class="controls">
                         <label>Nama :</label>
-                        <input type="tel" class="form-control" name="order_name" required data-validation-required-message="Please enter your phone number.">
+                        <input type="tel" class="form-control" name="order_name" required="">
                     </div>
                 </div> 
 
                 <div class=" form-group" >
                     <div class="controls">
                         <label>Email </label>
-                        <input type="email" class="form-control"  name="order_email" required data-validation-required-message="Please enter your email address.">
+                        <input type="email" class="form-control"  name="order_email" required="">
                     </div>
                 </div>
 
                 <div class=" form-group" >
                     <div class="controls">
                         <label>Pin BBM:</label>
-                        <input type="email" class="form-control"  name="order_bbm" required data-validation-required-message="Please enter your email address.">
+                        <input type="email" class="form-control"  name="order_bbm" required="">
                     </div>
                 </div>
 
                 <div class=" form-group" >
                     <div class="controls">
                         <label>Nomor WhatsApp </label>
-                        <input type="email" class="form-control"  name="order_wa" required data-validation-required-message="Please enter your email address.">
+                        <input type="email" class="form-control"  name="order_wa" required="">
                     </div>
                 </div>
 
@@ -107,6 +107,8 @@ $dataProduct = mysql_fetch_array($sqlProduct);
                         <textarea rows="10" cols="100" class="form-control" name="order_alamat" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
                     </div>
                 </div>
+
+
                 <div id="success"></div>
                 <button type="submit" name="pesan" class="btn btn-primary" >PESAN SEKARANG</button>
             </form>

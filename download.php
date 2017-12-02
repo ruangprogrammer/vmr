@@ -10,8 +10,7 @@
                     <li class="active">Schedule</li>
                 </ol>
             </div>
-        </div> -->
-        <!-- /.row -->
+      -->
 	</div>
 </section>
 <!-- /header section -->
@@ -22,9 +21,9 @@
 			<table class="table">
 				<thead>
 					<tr>
-						<th><h4>Foto</h4></th>
-						<th><h4>Nama</h4></th>
-						<th><h4>Kota</h4></th>
+						<th><h4>Judul</h4></th>
+						<th><h4>File</h4></th>
+						<!--<th><h4>Kota</h4></th>-->
 						<th></th>
 					</tr>
 				</thead>
@@ -33,18 +32,19 @@
 					$sqlSiswa =  mysql_query("SELECT * FROM siswa ORDER BY siswa_id DESC");
 					while($dataSiswa=mysql_fetch_array($sqlSiswa)){ ?>
 					<tr>
-						<td><img src="images/siswa/<?php echo $dataSiswa['siswa_images']; ?>" alt="australia" class="img-responsive" style="width: 130px;"></td>
-						<td><?php echo $dataSiswa['siswa_name']; ?></td>
-						<td><a data-toggle="modal" href="#map1" class="map-link" title="Click"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $dataSiswa['siswa_city'] ?></a></td>
-						<td><a class="btn btn-primary" href="artikel-detail-2.html">download</a></td>
+						<td>Rancing Books<?php //echo $dataSiswa['siswa_images']; ?></td>
+						<td>file-test-rancing-file-test-rancingfile-test-rancing.pdf <?php //echo $dataSiswa['siswa_name']; ?></td>
+						<!--<td><?php /*echo $dataSiswa['siswa_city'] */?></a></td>-->
+						<td><a class="btn btn-primary" href="#" style="color:#fff;">download</a></td>
 					</tr>   
 					<?php } ?>  
 
 				</tbody>
 			</table>
 		</div>	
-	</div>	
-<!-- 	<div class="modal fade" id="map1" tabindex="-1" role="dialog" aria-labelledby="map1" aria-hidden="true">
+	</div>
+<!--
+   <div class="modal fade" id="map1" tabindex="-1" role="dialog" aria-labelledby="map1" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -62,7 +62,8 @@
 			</div>
 		</div>
 	</div> -->
-</section>	
+</section>
+<br><br><br><br><br><br><br><br><br>
 
 
 

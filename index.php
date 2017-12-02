@@ -1,8 +1,4 @@
-<!--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.html"><h1>VMR Mekanik</h1></a>
+			<a class="navbar-brand" href="index.html"><h1 style="font-size: 19px;">VMR Mekanik</h1></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
         	<ul class="nav navbar-nav slide-nav">
@@ -54,9 +50,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<li><a href="galeri-foto.html">Galeri Foto</a></li>
 				<li><a href="special-tools.html">Special Tools</a></li>
 				<li><a href="product.html">Product</a></li>
-<!-- 			<li><a href="schedule.html">Schedule</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="drivers.html">Drivers</a></li> -->
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Kursus Mekanik Rancing<b class="caret"></b></a>
 					<ul class="dropdown-menu">
@@ -65,26 +58,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="download.html">Download</a></li>
 					</ul>
 				</li>
-				<!-- <li><a href="#">Siswa</a></li> -->
+
 				<li><a href="artikel.html">Artikel</a></li>
 				<li><a href="contact.html">Contact</a></li>
+				<?php if(empty($_SESSION['member_id'])){ ?>
+				<li><a href="login.html">Login</a></li>
+				<?php }else{ ?>
+					<li><a href="member-area.html">Member Area</a></li>
+				<?php } ?>
 			</ul>
-<!-- 			<ul class="nav navbar-nav slide-nav">
-				<li class="active current"><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="news.html">News</a></li>
-				<li><a href="schedule.html">Schedule</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="drivers.html">Drivers</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Short Codes <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="typo.html">Typography</a></li>
-						<li><a href="icons.html">Icons</a></li>
-					</ul>
-				</li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul> -->
         </div><!--/.nav-collapse -->		
     </div>
 </nav>

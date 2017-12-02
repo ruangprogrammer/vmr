@@ -19,9 +19,15 @@ RewriteRule ^service-detail-(.*)\.html$ ?hal=service-detail&id=$1 [L]
 
 RewriteRule ^contact.html$ ?hal=contact [L]
 
-
 RewriteRule ^login.html$ ?hal=login [L]
-RewriteRule ^member_area.html$ ?hal=member_area [L]
+RewriteRule ^login-check.html$ ?hal=login-check [L]
+
+RewriteRule ^login-(.*)\.html$ ?hal=login&action=$1 [L]
+
+RewriteRule ^member-area.html$ ?hal=member-area [L]
+RewriteRule ^member-edit-(.*)\.html$ ?hal=member-edit&id=$1 [L]
+RewriteRule ^proses-update-member.html$ ?hal=member-proses-update [L]
+RewriteRule ^logout.html$ ?hal=logout [L]
 
 
 #RewriteRule ^page-([0-9]+)-(.*)\.html$ media.php?mod=page&id=$1 [L]

@@ -21,7 +21,7 @@
 7. artikel        ... artkel
 8. contact        ... contack                              OK
 9. download       ...                   
-10. sertifikat    ...
+10. sertifikat    ... ok
 11. product 	  ...                   				   OK
 
 
@@ -47,7 +47,7 @@ halaman download admin                                          done
 
 login dengan facebook
 
-CETAK SERTIFIKAT PDF     
+CETAK SERTIFIKAT PDF      ok
 
 testimoni di halaman home :    				 
 
@@ -59,7 +59,7 @@ login dengan facebook
 
 login dengan gmail
 
-widget instagram
+widget instagram   ok
 
 halaman member di bagian admin.
 

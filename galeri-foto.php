@@ -1,13 +1,13 @@
 <!-- header section -->
 <section class="inner-w3ls">
     <div class="container">
-		<h3 class="text-center">Follow Instagram Kami</h3>
+		<h3 class="text-center">Follow Instagram</h3>
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a></li>
-                    <li class="active">Login</li>
+                    <li class="active">Instagram</li>
                 </ol>
             </div>
         </div>

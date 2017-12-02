@@ -1120,17 +1120,17 @@ p.news-agileits2 {
 .pager li>a, .pager li>span {
     display: inline-block;
     padding: 5px 14px;
-    background-color: #fb2124;
-    color: #000;
-    border: 1px solid #000;
+    background-color: #ff2b2e;
+    color: #fff;
+    border: 1px solid #fff;
     border-radius: 15px;
 	font-family: 'Michroma', sans-serif;
 }
 .pager li>a:focus, .pager li>a:hover {
     text-decoration: none;
-    background-color:#000;
+    background-color:#ff2b2e;
 	color:#fff;
-	border: 1px solid #000;
+	border: 1px solid #fff;
 }
 /*-- //news page --*/
 /*-- blogpost page --*/
@@ -1629,7 +1629,7 @@ section.schedule-w3layouts .table>tbody>tr>td a {
 	color:#000;
 }
 section.schedule-w3layouts .table>tbody>tr>td a:hover {
-	color:#000;
+	color:#fff;
 }
 .map iframe {
     width: 100%;
@@ -1782,9 +1782,9 @@ section.drivers-w3ls {
 }
 a.opening {
 	display: block;
-    background-color:#000;
+    background-color:#fb2124;
     color: #fff;
-    border: 2px solid #000;
+    border: 2px solid #fb2124;
     font-size: 18px;
     padding: 10px;
     width: 150px;
@@ -1826,7 +1826,7 @@ a.opening:hover {
     text-align: center;
     -webkit-transform: translateZ(30px);
     transform: translateZ(30px);
-    border: 0 solid #00BCD4;
+    border: 0 solid #fb212491;
     transition: border .4s ease; 
 }
 .project__title {
