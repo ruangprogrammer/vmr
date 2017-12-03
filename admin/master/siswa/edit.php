@@ -20,7 +20,7 @@ $rowsiswa = mysql_fetch_array($queryRowsiswa);
                                     WHERE siswa_id     = '".$id."'
                                      ");
                                      //echo $sql; exit();
-                $file = "../images/siswa/".$rowsiswa['siswa_images'];
+                $file = "../images/siswa/".$rowsiswa['siswa_images'];  //echo $file; exit();
                 unlink($file);
                                              
             }

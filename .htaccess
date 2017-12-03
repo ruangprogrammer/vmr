@@ -29,6 +29,8 @@ RewriteRule ^member-edit-(.*)\.html$ ?hal=member-edit&id=$1 [L]
 RewriteRule ^proses-update-member.html$ ?hal=member-proses-update [L]
 RewriteRule ^logout.html$ ?hal=logout [L]
 
+RewriteRule ^register.html$ ?hal=register [L]
+#RewriteRule ^proses-register.html$ ?hal=proses-register [L]
 
 #RewriteRule ^page-([0-9]+)-(.*)\.html$ media.php?mod=page&id=$1 [L]
 #RewriteRule ^download-(.*)-([0-9]+)\.html$ download.php?code=$1&id=$2 [L]

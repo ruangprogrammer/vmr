@@ -70,13 +70,67 @@ $dataMember = mysql_fetch_array($sqlMember);
 		</div>
 <div class="col-lg-9">
 			<div style="text-align: right;"><a href="logout.html">Logout</a></div>
-			<h4 class="post-w3ls">No. Induk : <?php echo $dataMember['siswa_code']; ?></h4>
+			<table border="0">
+				<tr>
+				<td>No. Induk</td><td>:</td><td><?php echo $dataMember['siswa_code']; ?></td>
+				</tr><tr><td>&nbsp</td></tr>
+				<tr>
+				<td>Nama </td><td>:</td><td><?php echo $dataMember['siswa_name'];?></td>
+				</tr><tr><td>&nbsp</td></tr>
+				<tr>
+				<td>Email </td><td>:</td><td><?php echo $dataMember['member_email']; ?></td>
+				</tr><tr><td>&nbsp</td></tr>
+				<tr>
+				<td>Username </td><td>:</td><td><?php echo $dataMember['member_username']; ?></td>
+				</tr><tr><td>&nbsp</td></tr>
+				<tr>
+				<td>Password </td><td>:</td><td>*******************</td>
+				</tr><tr><td>&nbsp</td></tr>
+				<tr>
+				<td>Kota</td><td>:</td><td><?php echo $dataMember['siswa_city']; ?></td>
+				</tr><tr><td>&nbsp</td></tr>
+				<tr>
+				<td>lamat Lengkap</td><td>:</td><td>
+					<?php echo $dataMember['siswa_address']; ?>
+					<!-- <input type="text" value="<?php// echo $dataMember['siswa_address']; ?>" class="form-control"> -->
+				</td>
+				</tr><tr><td>&nbsp</td></tr>
+				<tr>
+					<td>Status</td><td>:</td><td>
+					<?php
+						if($dataMember['member_status'] == 1){
+							echo "<b style='color:green'>Active</b>";
+						}else{
+							echo "<b style='color:red'>Menunggu Persetujuan Admin</b>";
+						}
+					 ?></td>
+				</tr>
+			</table>
+					<br>
+
+
+	<!-- 		<input type="submit" value="Cetak Sertifikat" name="" class="btn btn-primary aos-init"> -->
+			<?php
+			if($dataMember['member_status'] == 1){
+			?> 
+			<a href="cetak/cetak-sertifikat.php?id=<?php echo $dataMember['siswa_id']; ?>" target='_blank'>
+			<button type="submit" class="btn btn-primary aos-init"><i class="fa fa-print"></i> Cetak Sertifikat</button>
+			</a>
+			<?php
+			}else{
+							//echo "<b style='color:red'>Menunggu Persetujuan Admin</b>";
+				}
+			 ?>
+			<br><br>
+<!-- 			<h4 class="post-w3ls">No. Induk : <?php echo $dataMember['siswa_code']; ?></h4>
 			<h4 class="post-w3ls">Nama : <?php echo $dataMember['siswa_name'];?></h4>
 			<h4 class="post-w3ls">Email : <?php echo $dataMember['member_email']; ?></h4>
 			<h4 class="post-w3ls">Username : <?php echo $dataMember['member_username']; ?></h4>
 			<h4 class="post-w3ls">Password : ***************</h4>
 			<h4 class="post-w3ls">Kota : <?php echo $dataMember['siswa_city']; ?></h4>
-			<h4 class="post-w3ls">Alamat Lengkap : <?php echo $dataMember['siswa_address']; ?></h4>
+			<h4 class="post-w3ls">Alamat Lengkap : <?php echo $dataMember['siswa_address']; ?></h4> -->
+
+			
 			<div class="hline"></div>
 		</div>
 		<div class="clearfix"></div>

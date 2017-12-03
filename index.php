@@ -64,7 +64,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<?php if(empty($_SESSION['member_id'])){ ?>
 				<li><a href="login.html">Login</a></li>
 				<?php }else{ ?>
-					<li><a href="member-area.html">Member Area</a></li>
+					<li><a href="member-area.html">Akun</a></li>
 				<?php } ?>
 			</ul>
         </div><!--/.nav-collapse -->		

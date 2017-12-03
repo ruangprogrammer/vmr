@@ -48,10 +48,39 @@
                         <input type="password" name="frm_password" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
                         <p class="help-block"></p>
                     </div>
+
+                    <div class="controls">
+                                <button type="submit" class="btn btn-primary">LOGIN</button>
+                                  <button type="submit" class="btn btn-primary" style="border: 2px solid #2845ff; color: #2845ff; background-color: #f5f5f5;">With Facebook</button>
+                      </div>
+
+
                 </div>
+
+                <!-- 
                     <div id="success"></div>
                  <button type="submit" class="btn btn-primary">LOGIN</button>
-                 <button type="submit" class="btn btn-primary" style="border: 2px solid #2845ff; color: #2845ff; background-color: #f5f5f5;">With Facebook</button>
+                 <button type="submit" class="btn btn-primary" style="border: 2px solid #2845ff; color: #2845ff; background-color: #f5f5f5;">With Facebook</button> -->
+
+
+                   <div class="control-group form-group">
+                      <div class="controls" style="text-align: left;">
+                        
+                    
+                          <p>Not a member yet? <a href="register.html">Register</a></p>
+                          <br>
+                 
+                         </div>
+                         <!-- <div class="controls" style="text-align: center;">
+                           <p>Copyright © 2017</p>
+                           <br>
+                         </div>
+                         <div class="controls" style="text-align: center;">
+                           <p>www.vmrmekanikberdasi.com</p>
+                         </div> -->
+                   </div>
+
+
             </form>
         </div>
         
